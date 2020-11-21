@@ -2,9 +2,7 @@
 
 This repository contains the official PyTorch implementation of the following paper:
 
-Title: [DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/pdf/2011.08518.pdf) [arXiv](https://arxiv.org/abs/2011.08518)
-
-Authors: [Marvin Chancán](https://mchancan.github.io), Michael Milford
+[DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/pdf/2011.08518.pdf) [arXiv](https://arxiv.org/abs/2011.08518) by [Marvin Chancán](https://mchancan.github.io) and Michael Milford.
 
 Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io/))
 
