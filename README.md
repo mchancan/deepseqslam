@@ -42,7 +42,7 @@ The [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Later
 
 ## Single Node Training (CPU, GPU or Multi-GPUs)
 
-In this release, we provide an implementation of DeepSeqSLAM for evaluation on the Gardens Point dataset with challenging day-night changing conditions. We also provide all the raw images and normalized (synthetic) GPS data for training and deployment.
+In this release, we provide an implementation of DeepSeqSLAM for evaluation on the Gardens Point dataset with challenging day-night changing conditions. We also provide normalized (synthetic) GPS data for training and deployment on this dataset.
 
 ### Commands
 
