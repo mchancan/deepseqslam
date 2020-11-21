@@ -3,15 +3,18 @@
 This repository contains the official PyTorch implementation of the following paper:
 
 Title: [DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/pdf/2011.08518.pdf) [arXiv](https://arxiv.org/abs/2011.08518)
+
 Authors: [Marvin Chancán](https://mchancan.github.io), Michael Milford
+
 Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io/))
 
 Project page: [https://mchancan.github.io/deepseqslam](https://mchancan.github.io/deepseqslam)
 
+
 About
 -----
 
-`DeepSeqSLAM` is an scalable deep learning framework for `visual and positional representation learning` in the context of place recognition for simultaneuos localization and mapping (SLAM) and autonomous driving research.
+DeepSeqSLAM is an scalable deep learning framework for `visual and positional representation learning` in the context of place recognition for simultaneuos localization and mapping (SLAM) and autonomous driving research.
 
 
 ## BibTex Citation
@@ -37,7 +40,7 @@ You just need Python v3.6+ with standard scientific packages, PyTorch v1.1+, and
 
 ## Training Data
 
-The [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets) Walking dataset consists of three folders each with 200 images each. The image name indicates correspondence in location between each of the three route traversals.
+The [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets) Walking dataset consists of three folders each with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets), unzip, and place the `day_left`, `day_right`, and `night_right` image folers in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
 
 ## Single Node Training (CPU, GPU or Multi-GPUs)
 
