@@ -1,3 +1,20 @@
+################################################################################
+# This file is part of the paper:
+#  Title: "DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description
+#         and Sequence-based Place Recognition"
+#  Authors: Marvin Chancán, Michael Milford (2020)
+#  Project page: https://mchancan.github.io/deepseqslam
+# 
+# Copyright (c) 2020, Marvin Chancán
+# All rights reserved.
+# 
+# Author:
+#  Marvin Chancán (mchancanl@uni.pe)
+# 
+# DeepSeqSLAM is under the MIT License (refer to the LICENSE file for details).
+# 
+###############################################################################
+
 import os, argparse, subprocess, shlex, io, time, glob, pickle, pprint
 
 import numpy as np
@@ -123,7 +140,7 @@ class DeepSeqSLAM(nn.Module):
             self.cnn.classifier[6] = nn.Identity()
 
         elif FLAGS.cnn_arch == "vgg16":
-            """ VGG11_bn """
+            """ VGG16 """
             self.feature_dim = self.cnn.classifier[6].in_features
             self.cnn.classifier[6] = nn.Identity()
 
@@ -274,8 +291,8 @@ class SequentialDataset(Dataset):
     def __init__(self, csv_file, data_dir, transform=None):
         """
         Args:
-            csv_file (string): Path to the csv file with gps data (2D) normalized between 0 to 1.
-            data_dir (string): Directory with all the images.
+            csv_file (string): Path to the csv file with positional data normalized between 0 to 1.
+            data_dir (string): Directory with all the images of a route.
             transform (callable, optional): Optional transform to be applied
                 on a sample.
         """
