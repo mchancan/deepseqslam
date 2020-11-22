@@ -2,12 +2,11 @@
 
 This repository contains the official PyTorch implementation of the following paper:
 
-[DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/abs/2011.08518) by [Marvin Chancán](https://mchancan.github.io) and Michael Milford.
+* Title: [DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/abs/2011.08518)
+* Authors: [Marvin Chancán](https://mchancan.github.io) and Michael Milford
+* Project page: [mchancan.github.io/deepseqslam](https://mchancan.github.io/deepseqslam) for video presentation and updates.
 
-Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io/))
-
-Project page: [https://mchancan.github.io/deepseqslam](https://mchancan.github.io/deepseqslam)
-
+Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io/)).
 
 About
 -----
@@ -38,13 +37,22 @@ You just need Python v3.6+ with standard scientific packages, PyTorch v1.1+, and
 
 ## Training Data
 
-The [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets) Walking dataset consists of three folders each with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
+The challenging [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets) Walking dataset consists of three folders each with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
 
 ## Single Node Training (CPU, GPU or Multi-GPUs)
 
-In this release, we provide an implementation of DeepSeqSLAM for evaluation on the Gardens Point dataset with challenging day-night changing conditions. We also provide normalized (synthetic) GPS data for training and deployment on this dataset.
+In this release, we provide an implementation of DeepSeqSLAM for evaluation on the Gardens Point dataset with challenging day-night changing conditions. We also provide normalized (synthetic) positional data for end-to-end training and deployment.
 
-### Commands
+### Runing the demo on the Gardens Point dataset
+
+```sh
+sh demo_deepseqslam.sh
+```
+
+You can also run this demo using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161`, or easily configure the `run.py` script for training with any other [PyTorch's model zoo](https://pytorch.org/docs/stable/torchvision/models.html) `torchvision`.
+
+
+### Commands example
 
 ```bash
 SEQ_LENGHT=10
@@ -85,8 +93,6 @@ do
     --cnn_arch $CNN
 done
 ```
-
-You can also try DeepSeqSLAM using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161` and easily configure it for training with any other [TorchVision](https://pytorch.org/docs/stable/torchvision/models.html) model.
 
 ### Help
 
