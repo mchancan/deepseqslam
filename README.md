@@ -155,14 +155,10 @@ This code has been largely inspired by the following projects:
 
 - [https://github.com/dicarlolab/CORnet](https://github.com/dicarlolab/CORnet)
 - [https://github.com/dicarlolab/vonenet](https://github.com/dicarlolab/vonenet)
+- [https://github.com/mchancan/flynet](https://github.com/mchancan/flynet)
 - [https://github.com/cvg/Hierarchical-Localization](https://github.com/cvg/Hierarchical-Localization)
 - [https://github.com/pytorch/examples/tree/master/imagenet](https://github.com/pytorch/examples/tree/master/imagenet)
 
 ## License
 
-Our code is released under the [MIT License](LICENSE).
-
-
-
-
-
+The DeepSeqSLAM code is released under the [MIT License](LICENSE).
