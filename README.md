@@ -43,7 +43,7 @@ The challenging [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Nigh
 
 In this release, we provide an implementation of DeepSeqSLAM for evaluation on the Gardens Point dataset with challenging day-night changing conditions. We also provide normalized (synthetic) positional data for end-to-end training and deployment.
 
-### Runing the demo on the Gardens Point dataset
+### Run the demo on the Gardens Point dataset
 
 ```sh
 sh demo_deepseqslam.sh
