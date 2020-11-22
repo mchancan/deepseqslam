@@ -49,7 +49,7 @@ In this release, we provide an implementation of DeepSeqSLAM for evaluation on t
 sh demo_deepseqslam.sh
 ```
 
-You can run this demo using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161`, or easily configure the `run.py` script for training with any other [PyTorch's model zoo](https://pytorch.org/docs/stable/torchvision/models.html) in `torchvision`.
+You can run this demo using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161`, or easily configure the `run.py` script for training with any other [PyTorch's model](https://pytorch.org/docs/stable/torchvision/models.html) in `torchvision`.
 
 
 ### Commands example
