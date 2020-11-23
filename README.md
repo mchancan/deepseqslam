@@ -149,7 +149,7 @@ optional arguments:
 
 For training on multiple nodes, you should use the NCCL backend for multi-processing distributed training since it currently provides the best distributed training performance. Please refer to [ImageNet training in PyTorch](https://github.com/pytorch/examples/tree/master/imagenet) for additional information on this.
 
-## Acknowledgement
+## Acknowledgements
 
 This code has been largely inspired by the following projects:
 
