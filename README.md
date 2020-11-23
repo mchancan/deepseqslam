@@ -11,7 +11,7 @@ Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on
 About
 -----
 
-DeepSeqSLAM is an scalable deep learning framework for `visual and positional representation learning` in the context of place recognition for simultaneuos localization and mapping (SLAM) and autonomous driving research.
+DeepSeqSLAM is a scalable deep learning framework for `visual and positional representation learning` in the context of place recognition for simultaneous localization and mapping (SLAM) and autonomous driving research.
 
 
 ## BibTex Citation
