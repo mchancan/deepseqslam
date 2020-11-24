@@ -1,19 +1,18 @@
 ################################################################################
 # This file is part of the paper:
 #  Title: "DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description
-#         and Sequence-based Place Recognition"
+#          and Sequence-based Place Recognition"
 #  Authors: Marvin Chancán, Michael Milford (2020)
 #  ArXiv: https://arxiv.org/abs/2011.08518
 #  Project page: https://mchancan.github.io/deepseqslam
 # 
-# Copyright (c) 2020, Marvin Chancán
+# Copyright (c) 2020,
 # All rights reserved.
 # 
 # Author:
 #  Marvin Chancán (mchancanl@uni.pe)
 # 
 # DeepSeqSLAM is under the MIT License (refer to the LICENSE file for details).
-# 
 ################################################################################
 
 import os, argparse, subprocess, shlex, io, time, glob, pickle, pprint
@@ -302,7 +301,7 @@ class SequentialDataset(Dataset):
         self.img_size = FLAGS.img_size
         self.total_imgs = np.sort(os.listdir(data_dir))
         self.ids = np.linspace(0,FLAGS.nimgs-1,FLAGS.nimgs)
-        self.gps = 1000*((np.loadtxt(csv_file, delimiter=',')-0.5)*2)
+        self.pos = 1000*((np.loadtxt(csv_file, delimiter=',')-0.5)*2)
         
     def __len__(self):
         return len(self.total_imgs) - FLAGS.seq_len
@@ -310,7 +309,7 @@ class SequentialDataset(Dataset):
     def __getitem__(self, idx):
 
         img_seq = []
-        gps_seq = self.gps[idx:idx+FLAGS.seq_len]
+        pos_seq = self.pos[idx:idx+FLAGS.seq_len]
         for i in range(FLAGS.seq_len):
             img_loc = os.path.join(self.data_dir, self.total_imgs[idx+i])
             img_seq += [Image.open(img_loc)]
@@ -325,9 +324,9 @@ class SequentialDataset(Dataset):
 
         img_seq = torch.cat(img_seq_pt, dim=0)
         ids = torch.from_numpy(ids).type(torch.long)
-        gps_seq = torch.from_numpy(gps_seq.astype('float32'))
+        pos_seq = torch.from_numpy(pos_seq.astype('float32'))
 
-        return (img_seq, gps_seq), ids
+        return (img_seq, pos_seq), ids
 
 class DeepSeqSLAMTrain(object):
 
@@ -349,7 +348,7 @@ class DeepSeqSLAMTrain(object):
             self.loss = self.loss.cuda()
 
     def data(self):
-        dataset = SequentialDataset(csv_file=os.path.join(FLAGS.data_path, f'gp_gps.csv'),
+        dataset = SequentialDataset(csv_file=os.path.join(FLAGS.data_path, f'gp_pos.csv'),
                                    data_dir=os.path.join(FLAGS.data_path, f'{FLAGS.val_set}'),
                                    transform=torchvision.transforms.Compose([
                                        torchvision.transforms.Resize((FLAGS.img_size, FLAGS.img_size)),
@@ -412,7 +411,7 @@ class DeepSeqSLAMVal(object):
             self.loss = self.loss.cuda()
 
     def data(self):
-        dataset = SequentialDataset(csv_file=os.path.join(FLAGS.data_path, f'gp_gps.csv'),
+        dataset = SequentialDataset(csv_file=os.path.join(FLAGS.data_path, f'gp_pos.csv'),
                                    data_dir=os.path.join(FLAGS.data_path, f'{FLAGS.val_set}'),
                                    transform=torchvision.transforms.Compose([
                                        torchvision.transforms.Resize((FLAGS.img_size, FLAGS.img_size)),
