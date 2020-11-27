@@ -1,20 +1,3 @@
-################################################################################
-# This file is part of the paper:
-#  Title: "DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description
-#          and Sequence-based Place Recognition"
-#  Authors: Marvin Chancán, Michael Milford (2020)
-#  ArXiv: https://arxiv.org/abs/2011.08518
-#  Project page: https://mchancan.github.io/deepseqslam
-# 
-# Copyright (c) 2020,
-# All rights reserved.
-# 
-# Author:
-#  Marvin Chancán (mchancanl@uni.pe)
-# 
-# DeepSeqSLAM is under the MIT License (refer to the LICENSE file for details).
-################################################################################
-
 import os, argparse, subprocess, shlex, io, time, glob, pickle, pprint
 
 import numpy as np
