@@ -49,7 +49,7 @@ In this release, we provide an implementation of DeepSeqSLAM for evaluation on t
 sh demo_deepseqslam.sh
 ```
 
-You can run this demo using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161`, or easily configure the `run.py` script for training with any other [PyTorch's model](https://pytorch.org/docs/stable/torchvision/models.html) in `torchvision`.
+You can run this demo using one of these pre-trained models: `alexnet`, `resnet18`, `vgg16`, `squeezenet1_0`, `densenet161`, or easily configure the `run.py` script for training with any other [PyTorch's model](https://pytorch.org/docs/stable/torchvision/models.html) from `torchvision`.
 
 
 ### Commands example
@@ -149,16 +149,15 @@ optional arguments:
 
 For training on multiple nodes, you should use the NCCL backend for multi-processing distributed training since it currently provides the best distributed training performance. Please refer to [ImageNet training in PyTorch](https://github.com/pytorch/examples/tree/master/imagenet) for additional information on this.
 
-## Acknowledgements
+## Acknowledgements (Updated as of 27/11/2020)
 
 This code has been largely inspired by the following projects:
 
 - [https://github.com/dicarlolab/CORnet](https://github.com/dicarlolab/CORnet)
 - [https://github.com/dicarlolab/vonenet](https://github.com/dicarlolab/vonenet)
 - [https://github.com/mchancan/flynet](https://github.com/mchancan/flynet)
-- [https://github.com/cvg/Hierarchical-Localization](https://github.com/cvg/Hierarchical-Localization)
 - [https://github.com/pytorch/examples/tree/master/imagenet](https://github.com/pytorch/examples/tree/master/imagenet)
 
-## License
+## License (Updated as of 27/11/2020)
 
-The DeepSeqSLAM code is released under the [MIT License](LICENSE).
+GNU GPL 3+
