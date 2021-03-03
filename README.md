@@ -1,26 +1,38 @@
-# DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition #
+# DeepSeqSLAM - The Deep Learning Framework for High-Performance Long-Term Place Recognition #
 
-This repository contains the official PyTorch implementation of the following paper:
+This repository contains the official PyTorch implementation of the papers:
 
-* Title: [DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition](https://arxiv.org/abs/2011.08518)
-* Authors: [Marvin Chancán](https://mchancan.github.io) and Michael Milford
-* Project page: [mchancan.github.io/deepseqslam](https://mchancan.github.io/deepseqslam) for video presentation and updates.
+**[1] Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition**
+Marvin Chancán, Michael Milford. [\[ArXiv\]](https://arxiv.org/abs/2103.00000)  [\[Website\]](https://mchancan.github.io/spl) 
 
-Accepted at the [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io/)).
+**[2] DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition**.
+Marvin Chancán, Michael Milford. [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io)).
+ [\[ArXiv\]](https://arxiv.org/abs/2011.08518) [\[Website\]](https://mchancan.github.io/deepseqslam) 
 
-About
------
+Both papers introduce DeepSeqSLAM, a CNN+LSTM `baseline` for state-of-the-art place recognition.
+DeepSeqSLAM leverages `visual and positional` time-series data for joint global description and sequential place inference
+in the context of simultaneous localization and mapping (SLAM) and autonomous driving research. Contrary to classical two-stage pipelines, *e.g.*,
+*match-then-temporally-filter*, this codebase is orders of magnitud faster, scalable and learns from a single traversal of a route,
+while accurately generalizing to multiple traversals of the same route under very different environmental conditions.
 
-DeepSeqSLAM is a scalable deep learning framework for `visual and positional representation learning` in the context of place recognition for simultaneous localization and mapping (SLAM) and autonomous driving research.
+![baseline](https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png)
 
 
 ## BibTex Citation
 
-If you find DeepSeqSLAM useful for your research, please consider citing:
+If you find any of the tools provided here useful for your research or report our results in a publication,
+please consider citing both [Sequential Place Learning](https://arxiv.org/abs/2103.00000) and [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) papers:
 
 ```text
+@article{chancan2021spl,
+	author = {Marvin {Chanc\'an} and Michael {Milford}},
+	title = {Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition},
+	journal = {arXiv preprint arXiv:2103.00000},
+	year = {2021}
+}
+
 @article{chancan2020deepseqslam,
-	author = {M. {Chanc\'an} and M. {Milford}},
+	author = {Marvin {Chanc\'an} and Marvin {Milford}},
 	title = {DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition},
 	journal = {arXiv preprint arXiv:2011.08518},
 	year = {2020}
@@ -37,7 +49,7 @@ You just need Python v3.6+ with standard scientific packages, PyTorch v1.1+, and
 
 ## Training Data
 
-The challenging [Gardens Point](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets) Walking dataset consists of three folders with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://wiki.qut.edu.au/display/raq/Day+and+Night+with+Lateral+Pose+Change+Datasets), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
+The challenging [Gardens Point](https://zenodo.org/record/4561862) Walking dataset consists of three folders with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://zenodo.org/record/4561862), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
 
 ## Single Node Training (CPU, GPU or Multi-GPUs)
 
@@ -149,7 +161,7 @@ optional arguments:
 
 For training on multiple nodes, you should use the NCCL backend for multi-processing distributed training since it currently provides the best distributed training performance. Please refer to [ImageNet training in PyTorch](https://github.com/pytorch/examples/tree/master/imagenet) for additional information on this.
 
-## Acknowledgements (Updated as of 27/11/2020)
+## Acknowledgements
 
 This code has been largely inspired by the following projects:
 
