@@ -1,4 +1,4 @@
-# DeepSeqSLAM - The Deep Learning Framework for High-Performance Long-Term Place Recognition #
+# DeepSeqSLAM - deep learning framework for high-performance long-term place recognition #
 
 This repository contains the official PyTorch implementation of the papers:
 
