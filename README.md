@@ -46,8 +46,8 @@ please consider citing both [Sequential Place Learning](https://arxiv.org/abs/21
 
 ## News
 
-- **(Mar 3, 2021)** Archive DeepSeqSLAM ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update `README.md` with new download [link](https://doi.org/10.5281/zenodo.4561862) of the Gardens Point dataset.
-- **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2011.08518) submitted to RSS 2021.
+- **(Mar 3, 2021)** Archive ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update `README.md` with new download [link](https://doi.org/10.5281/zenodo.4561862) for the Gardens Point dataset.
+- **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2103.00000) submitted to RSS 2021.
 - **(Oct 30, 2020)** Paper [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) accepted at the NeurIPS 2020 Workshop on [ML4AD](https://ml4ad.github.io).
 
 
