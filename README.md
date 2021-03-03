@@ -7,7 +7,8 @@ Marvin Chancán, Michael Milford. [\[ArXiv\]](https://arxiv.org/abs/2103.00000) 
 
 **[2] DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition**.
 Marvin Chancán, Michael Milford. [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io)).
- [\[ArXiv\]](https://arxiv.org/abs/2011.08518) [\[Website\]](https://mchancan.github.io/deepseqslam) 
+ [\[ArXiv\]](https://arxiv.org/abs/2011.08518) [\[Website\]](https://mchancan.github.io/deepseqslam) [\[YouTube Video\]](https://youtu.be/IWFxjerw-9E) 
+
 
 Both papers introduce DeepSeqSLAM, a CNN+LSTM `baseline` architecture for state-of-the-art route-based place recognition.
 DeepSeqSLAM leverages `visual and positional` time-series data for joint global description and sequential place inference
