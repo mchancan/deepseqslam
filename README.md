@@ -17,7 +17,7 @@ while accurately generalizing to multiple traversals of the same route under ver
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png" width="60%"/>
+  <img src="https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png" width="70%"/>
 </p>
 
 
