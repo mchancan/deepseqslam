@@ -2,7 +2,7 @@
 
 This repository contains the official PyTorch implementation of the papers:
 
-**[1] Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition**
+**[1] Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition**.
 Marvin Chancán, Michael Milford. [\[ArXiv\]](https://arxiv.org/abs/2103.00000)  [\[Website\]](https://mchancan.github.io/spl) 
 
 **[2] DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition**.
@@ -15,7 +15,7 @@ in the context of simultaneous localization and mapping (SLAM) and autonomous dr
 *match-then-temporally-filter*, this codebase is orders of magnitud faster, scalable and learns from a single traversal of a route,
 while accurately generalizing to multiple traversals of the same route under very different environmental conditions.
 
-![baseline](https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png)
+![baseline](https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png | width=60)
 
 
 ## BibTex Citation
