@@ -182,6 +182,6 @@ This code has been largely inspired by the following projects:
 - [https://github.com/mchancan/flynet](https://github.com/mchancan/flynet)
 - [https://github.com/pytorch/examples/tree/master/imagenet](https://github.com/pytorch/examples/tree/master/imagenet)
 
-## License (Updated as of 27/11/2020)
+## License
 
 GNU GPL 3+
