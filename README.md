@@ -15,7 +15,10 @@ in the context of simultaneous localization and mapping (SLAM) and autonomous dr
 *match-then-temporally-filter*, this codebase is orders of magnitud faster, scalable and learns from a single traversal of a route,
 while accurately generalizing to multiple traversals of the same route under very different environmental conditions.
 
-![baseline](https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png | width=60)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/25828032/109748988-87dd6600-7c25-11eb-82c4-b8c3d298601a.png" width="60%"/>
+</p>
 
 
 ## BibTex Citation
