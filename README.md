@@ -3,7 +3,7 @@
 This repository contains the official PyTorch implementation of the papers:
 
 **[1] Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition**.
-Marvin Chancán, Michael Milford. [\[ArXiv\]](https://arxiv.org/abs/2103.00000)  [\[Website\]](https://mchancan.github.io/spl) 
+Marvin Chancán, Michael Milford. [\[ArXiv\]](https://arxiv.org/abs/2103.02074)  [\[Website\]](https://mchancan.github.io/spl) 
 
 **[2] DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition**.
 Marvin Chancán, Michael Milford. [NeurIPS 2020](https://neurips.cc/Conferences/2020/) Workshop on Machine Learning for Autonomous Driving ([ML4AD](https://ml4ad.github.io)).
@@ -26,13 +26,13 @@ while accurately generalizing to multiple traversals of the same route under ver
 ## BibTex Citation
 
 If you find any of the tools provided here useful for your research or report our results in a publication,
-please consider citing both [Sequential Place Learning](https://arxiv.org/abs/2103.00000) and [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) papers:
+please consider citing both [Sequential Place Learning](https://arxiv.org/abs/2103.02074) and [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) papers:
 
 ```text
 @article{chancan2021spl,
 	author = {Marvin {Chanc\'an} and Michael Milford},
 	title = {Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition},
-	journal = {arXiv preprint arXiv:2103.00000},
+	journal = {arXiv preprint arXiv:2103.02074},
 	year = {2021}
 }
 
@@ -48,7 +48,7 @@ please consider citing both [Sequential Place Learning](https://arxiv.org/abs/21
 ## News
 
 - **(Mar 3, 2021)** Archive ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update this `README.md` with new Gardens Point dataset [link](https://doi.org/10.5281/zenodo.4561862).
-- **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2103.00000) submitted to RSS 2021.
+- **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2103.02074) submitted to RSS 2021.
 - **(Oct 30, 2020)** Paper [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) accepted at the NeurIPS 2020 Workshop on [ML4AD](https://ml4ad.github.io).
 
 
