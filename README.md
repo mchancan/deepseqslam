@@ -37,17 +37,17 @@ please consider citing both [Sequential Place Learning](https://arxiv.org/abs/21
 
 ```text
 @article{chancan2021spl,
-	author = {Marvin {Chanc\'an} and Michael Milford},
-	title = {Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition},
-	journal = {arXiv preprint arXiv:2103.02074},
-	year = {2021}
+  title = {Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition},
+  author = {Marvin Chanc{\'a}n and Michael Milford},
+  journal = {arXiv preprint arXiv:2103.02074},
+  year = {2021}
 }
 
 @article{chancan2020deepseqslam,
-	author = {Marvin {Chanc\'an} and Michael Milford},
-	title = {DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition},
-	journal = {arXiv preprint arXiv:2011.08518},
-	year = {2020}
+  title = {DeepSeqSLAM: A Trainable CNN+RNN for Joint Global Description and Sequence-based Place Recognition},
+  author = {Marvin Chanc{\'a}n and Michael Milford},
+  journal = {arXiv preprint arXiv:2011.08518},
+  year = {2020}
 }
 ```
 
