@@ -1,4 +1,4 @@
-# DeepSeqSLAM - the deep learning framework for route based place recognition #
+# DeepSeqSLAM - the deep learning framework for robot place recognition #
 
 This repository contains the official PyTorch implementation of the papers:
 
@@ -35,7 +35,7 @@ while accurately generalizing to multiple traversals of the same route under ver
 If you find any of the tools provided here useful for your research or report our results in a publication,
 please consider citing both [Sequential Place Learning](https://arxiv.org/abs/2103.02074) and [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) papers:
 
-```text
+```bibtext
 @article{chancan2021spl,
   title = {Sequential Place Learning: Heuristic-Free High-Performance Long-Term Place Recognition},
   author = {Marvin Chanc{\'a}n and Michael Milford},
