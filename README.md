@@ -22,7 +22,7 @@ while accurately generalizing to multiple traversals of the same route under ver
 
 
 ## News
-
+- **(Apr 30, 2021)** Have been told that the dataset link below on Zenodo got some errors when trying to unzip it. Here is an alternative Google Drive [link](https://drive.google.com/drive/folders/1xBtVGiKXKsTjBPk33y6W44GS3ygcxvN-?usp=sharing). Thanks for the interest in the code!
 - **(Mar 4, 2021)** [Contributions welcome!](#contributions-welcome)
 - **(Mar 3, 2021)** Archive ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update this `README.md` with new Gardens Point dataset [link](https://doi.org/10.5281/zenodo.4561862).
 - **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2103.02074) submitted to RSS 2021.
