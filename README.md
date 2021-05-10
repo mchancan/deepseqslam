@@ -22,12 +22,12 @@ while accurately generalizing to multiple traversals of the same route under ver
 
 
 ## News
-- **(Apr 30, 2021)** Have been told that the dataset link below on Zenodo got some errors when trying to unzip it. Here is an alternative Google Drive [link](https://drive.google.com/drive/folders/1xBtVGiKXKsTjBPk33y6W44GS3ygcxvN-?usp=sharing). Thanks for the interest in the code!
+- **(May 10, 2021)** Fixed and uploaded the Gardens Point dataset (.zip) file on [Zenodo](https://zenodo.org/record/4745641) (version 2). You can also find it on [Google Drive](https://drive.google.com/drive/folders/1xBtVGiKXKsTjBPk33y6W44GS3ygcxvN-?usp=sharing). Thanks everyone!
+- **(Apr 30, 2021)** The Gardens Point dataset link on Zenodo (version 1) has some errors when trying to unzip. Here is an alternative Google Drive [link](https://drive.google.com/drive/folders/1xBtVGiKXKsTjBPk33y6W44GS3ygcxvN-?usp=sharing). Thanks for the interest in the code!
 - **(Mar 4, 2021)** [Contributions welcome!](#contributions-welcome)
-- **(Mar 3, 2021)** Archive ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update this `README.md` with new Gardens Point dataset [link](https://doi.org/10.5281/zenodo.4561862).
+- **(Mar 3, 2021)** Archive ML4AD [release](https://github.com/mchancan/deepseqslam/releases/tag/v1.0-beta) and update this `README.md` with new Gardens Point dataset [link](https://zenodo.org/record/4745641).
 - **(Mar 1, 2021)** Paper [Sequential Place Learning](https://arxiv.org/abs/2103.02074) submitted to RSS 2021.
 - **(Oct 30, 2020)** Paper [DeepSeqSLAM](https://arxiv.org/abs/2011.08518) accepted at the NeurIPS 2020 Workshop on [ML4AD](https://ml4ad.github.io).
-
 
 
 ## BibTex Citation
@@ -61,7 +61,7 @@ You just need Python v3.6+ with standard scientific packages, PyTorch v1.1+, and
 
 ## Training Data
 
-The challenging [Gardens Point](https://zenodo.org/record/4561862) Walking dataset consists of three folders with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://zenodo.org/record/4561862), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
+The challenging Gardens Point Walking dataset consists of three folders with 200 images each. The image name indicates correspondence in location between each of the three route traversals. Download the [dataset](https://zenodo.org/record/4745641), unzip, and place the `day_left`, `day_right`, and `night_right` image folders in the `datasets/GardensPointWalking` directory of DeepSeqSLAM.
 
 ## Single Node Training (CPU, GPU or Multi-GPUs)
 
